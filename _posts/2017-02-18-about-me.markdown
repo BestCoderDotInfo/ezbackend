@@ -1,0 +1,119 @@
+---
+layout: post
+title: About Me
+date: 2017-02-18 12:00
+comments: true
+external-url:
+categories: My-stories
+---
+
+> I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths.
+
+## PERSONAL DETAILS
+
+  - Fullname: NGUYEN MINH QUAN
+  - Nickname: Libra (Libra zodiac)
+  - Nationality: Vietnamese
+  - DOB: 26-09-1992
+  - Sex: Male
+  - Marital status: Single
+  - Linkedin: quanmnlibra
+
+## CAREER GOAL
+
+### Short Term:
+
+  - To develop a career in a company that specializes in programming. 
+    Having a stable job, long term. Dynamic working environment, 
+    professional dedication and contribution to the development of the company.
+
+  - Trying to become a good programmer who meets creative passion, 
+    exploring technology, creating products that professional.
+
+  - Do not stop learning experiences, improve knowledge and 
+    programming skills, build ourselves up to be promoted at work.
+
+### Longterm:
+
+  - Become a senior software engineer, passionate pursuit to become 
+    Senior full stack developer.
+
+## COMMUNICATION SKILLS
+
+  The experience at work as well as organizing outside activities has improved my ability to communicate effectively with everybody. It also taught me the importance of listening, supporting and respecting the others.
+
+## TECHNICAL SKILLS
+
+  Having **good** knowledge in:
+
+    * Ruby on Rails 
+
+    * PHP Framework such as : Laravel ( 4.2, 5.x ), CodeIgniter 
+    ( 2.x, 3.x ), OpenCart ( 2.x.x )
+
+    * Web Development: HTML, CSS, Bootstrap, Flexbox CSS, Responsive,
+     jQuery, jQuery Mobile, Ajax.
+
+    * JavaScript Framework such as : AngularJS, React JS .
+
+    * Mobile : Native App with React Native.
+
+    * Databases: MySql, Postgres 
+
+    * Testing Framwork: RSpec 
+
+    * Development tools: Git, Github, Docker
+
+    * Cloud services: Heroku, AWS, Digital Ocean
+
+## EDUCATION
+
+ **Computer Engineer** at [University of Information Technology](https://www.linkedin.com/school/15135546?pathWildcard=15135546) : 2010 - 2015
+
+ [PHP Online Training](http://www.qhonline.edu.vn) : 2013 - 2014
+
+## EXPERIENCE
+
+  **Full-stack Developer** at [Golden Owl Consulting Ltd](https://www.linkedin.com/company-beta/10340155/) : Feb 2016 - Present (Fulltime)
+
+  **Ruby on Rails Developer** at [Tinkerbox Studios Pte Ltd](https://www.linkedin.com/company-beta/561370/) : Seb 2016 - Dec 2016 (Remote)
+ 
+## PROJECTS 
+
+### A21
+  - Project descriptionFreight Platform for A21.
+  - [wwww.alex.world](http://alex.world/)
+
+### Serumi
+  - [www.naturion.com](http://www.naturion.com/)
+  - Naturion is dedicated to guiding people towards adopting healthier lifestyles. We are constantly looking for innovative ideas and technologies to develop reliable products to support your wellbeing.
+  - Technology using: Ruby on Rails, PostgreSQL
+
+### IADOA
+  - [www.iadoa.com](http://iadoa.com/)
+  - IADOA is an e-commerce site that sells different style of Aodai - traditional dress of Vietnam.
+  - Technology using: Ruby on Rails, Spree.
+
+### CPD
+  - CPD is a search engine to look for variable online courses which mainly held in Australia
+
+### IdeaBurns
+  - Ideaburns: is not actually a webplatform. It's sates of mind. Changing the Sates of mind drives the matter of scales economic development to fetch jobs and raises the economy. Need for that message to get out leading the systems,leading the governments & leading the communities.
+  -Technology using: Ruby on Rails, PostgreSQL, Web socket
+  - [Ideaburns](http://ideaburn-goldenowl.herokuapp.com)
+
+### FitDay
+  - Mobile app using React Native
+
+### Built
+  - Built is an iOS and Android app geared towards tracking the workouts of dedicated, serious, and professional strength athletes. It is a no frills app that gets straight to the point: tracking workouts and providing valuable metrics that can be used to improve an athlete’s performance and workout programming.
+  - Technology using: React Native, D3
+
+## PERSONAL QUALITIES
+
+  **A spirit of learning new technologies.
+  Sense of responsibility, carefulness in all the works done are my greatest strengths.**
+
+## My Favorite Quotes
+
+  **Programming Is Like SEX: one Mistake and You're Providing Support for Lifetime.**
