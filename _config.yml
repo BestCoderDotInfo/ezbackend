@@ -7,13 +7,13 @@ biography: "I'm a Ruby on Rails developer. But I can work same as a Full-stack d
 colophon: "© MMXIII — MMXVI by Hugo Sereno Ferreira.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site is hosted at <a href='https://pages.github.com/'>Github Pages</a> and created with <a href='http://jekyllrb.com/'>Jekyll</a>."
 
 baseurl: ""
-url: "https://bestcoder.info"
+url: "http://bestcoder.info"
 
 twitter_username:
 github_username: minhquan4080
 linkedin_username: quanmnlibra
 facebook_username: librauit
-google-analytics:
+google-analytics: UA-92230923-1
 
 simple_search: http://google.com/search
 markdown: kramdown
