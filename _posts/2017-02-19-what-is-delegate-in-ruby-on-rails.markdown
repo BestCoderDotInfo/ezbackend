@@ -6,7 +6,7 @@ comments: true
 external-url:
 categories: Ruby-on-Rails
 ---
-Delegation is a quite common practice in Ruby projects, if you consider proxies, mixins and composition as the ingredient of the **Delegation Pattern**.
+>Delegation is a quite common practice in Ruby projects, if you consider proxies, mixins and composition as the ingredient of the **Delegation Pattern**.
 
 The Delegation Design Pattern is a technique where an object exposes certain behavior but it actually delegates responsibility for implementing that behavior to an associated object.
 
@@ -120,3 +120,5 @@ The `:to` it a non-option, because it’s mandatory.
 ## Documentation
 
 The ActiveSupport delegate extension has a detailed documentation but, unfortunately, it doesn’t show up in the main Rails documentation nor you can find it in the ActiveSupport documentation. I suggest you to [jump directly into the source code](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/module/delegation.rb), it is worth the effort.
+
+> ## Happy coding!

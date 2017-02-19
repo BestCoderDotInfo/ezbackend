@@ -6,7 +6,7 @@ comments: true
 external-url: deploy-your-rails-applicaiton-to-aws-with-passenger-and-apache-on-ubuntu
 categories: AWS
 ---
-As developers, we are usually concerned about the development part of any application. We don’t think much about the deployment part as we consider it to be a responsibility of the SysAdmins. But many times, we don’t have a dedicated SysAdmin available, so we have to put on the SysAdmin hat and get things done. There are many options to deploy your Rails application. Today, I will cover how to deploy a Rails application to Amazon Web Services (AWS).
+>As developers, we are usually concerned about the development part of any application. We don’t think much about the deployment part as we consider it to be a responsibility of the SysAdmins. But many times, we don’t have a dedicated SysAdmin available, so we have to put on the SysAdmin hat and get things done. There are many options to deploy your Rails application. Today, I will cover how to deploy a Rails application to Amazon Web Services (AWS).
 
 ![](/assets/deploy-your-rails-app-to-aws.png){:height="100%" width="100%"}
 
@@ -173,8 +173,12 @@ USERNAME@ec2-________.compute-1.amazonaws.com's password:
 
 ## Add your domain with instance
 
-### We will use Cloudflare
+### We will use with Cloudflare
+
+Go to [https://www.cloudflare.com](https://www.cloudflare.com) and try register your free account.
 
 After you register and login your account, add site with your domain, config DNS. We use public ip of instance : `52.90.195.71` :
     
 ![](/assets/Screen Shot 2017-02-05 at 11.21.41.png){:height="100%" width="100%"}
+
+>## Happy coding!

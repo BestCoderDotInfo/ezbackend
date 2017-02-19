@@ -9,7 +9,7 @@ categories: My-stories
 
 > I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths.
 
-## PERSONAL DETAILS
+>## PERSONAL DETAILS
 
   - Fullname: NGUYEN MINH QUAN
   - Nickname: Libra (Libra zodiac)
@@ -19,7 +19,7 @@ categories: My-stories
   - Marital status: Single
   - Linkedin: quanmnlibra
 
-## CAREER GOAL
+>## CAREER GOAL
 
 ### Short Term:
 
@@ -38,11 +38,11 @@ categories: My-stories
   - Become a senior software engineer, passionate pursuit to become 
     Senior full stack developer.
 
-## COMMUNICATION SKILLS
+>## COMMUNICATION SKILLS
 
   The experience at work as well as organizing outside activities has improved my ability to communicate effectively with everybody. It also taught me the importance of listening, supporting and respecting the others.
 
-## TECHNICAL SKILLS
+>## TECHNICAL SKILLS
 
   Having **good** knowledge in:
 
@@ -66,19 +66,19 @@ categories: My-stories
 
     * Cloud services: Heroku, AWS, Digital Ocean
 
-## EDUCATION
+>## EDUCATION
 
  **Computer Engineer** at [University of Information Technology](https://www.linkedin.com/school/15135546?pathWildcard=15135546) : 2010 - 2015
 
  [PHP Online Training](http://www.qhonline.edu.vn) : 2013 - 2014
 
-## EXPERIENCE
+>## EXPERIENCE
 
   **Full-stack Developer** at [Golden Owl Consulting Ltd](https://www.linkedin.com/company-beta/10340155/) : Feb 2016 - Present (Fulltime)
 
   **Ruby on Rails Developer** at [Tinkerbox Studios Pte Ltd](https://www.linkedin.com/company-beta/561370/) : Seb 2016 - Dec 2016 (Remote)
  
-## PROJECTS 
+>## PROJECTS 
 
 ### A21
   - Project descriptionFreight Platform for A21.
@@ -109,11 +109,11 @@ categories: My-stories
   - Built is an iOS and Android app geared towards tracking the workouts of dedicated, serious, and professional strength athletes. It is a no frills app that gets straight to the point: tracking workouts and providing valuable metrics that can be used to improve an athlete’s performance and workout programming.
   - Technology using: React Native, D3
 
-## PERSONAL QUALITIES
+>## PERSONAL QUALITIES
 
   **A spirit of learning new technologies.
   Sense of responsibility, carefulness in all the works done are my greatest strengths.**
 
-## My Favorite Quotes
+>## My Favorite Quotes
 
-  **Programming Is Like SEX: one Mistake and You're Providing Support for Lifetime.**
+  Programming Is Like SEX: one Mistake and You're Providing Support for Lifetime.
