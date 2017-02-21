@@ -10,7 +10,7 @@ categories: Ruby-on-Rails
 
 ## Tại Sao Locking Lại Cần Thiết Đến Thế ?
 
-Hãy tưởng tượng bạn đang xây dựng một ứng dụng, trong đó mỗi người sẽ có một tài khoản với với một tiền ảo. Và người dùng có id là 5 đang truy cập vào trang web để mua một số món hàng, chúng ta nhận vào tài khoản như thế này :
+Hãy tưởng tượng bạn đang xây dựng một ứng dụng, trong đó mỗi người sẽ có một tài khoản với một tiền ảo. Và người dùng có id là 5 đang truy cập vào trang web để mua một số món hàng, chúng ta nhận vào tài khoản như thế này :
 
 ```
 account = Account.find_by_user_id(5)
