@@ -1,3 +1,11 @@
+# Welcome to Bestcoder
+```
+git clone https://github.com/minhquan4080/bestcoder.info.git
+cd bestcoder && ./test.sh
+```
+
+Open brower and visit `http://localhost:4000`
+
 # Papyrus - Jekyll Theme
 
 Papyrus is a responsive three-column Jekyll theme with classic styling and careful typographic details.
