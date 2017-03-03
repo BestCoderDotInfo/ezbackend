@@ -5,6 +5,7 @@ date: 2017-02-19 13:00
 comments: true
 external-url:
 categories: Ruby-on-Rails
+keywords: locking, looking active record, active record, rails
 ---
 >Như các bạn đã biết, **Data consistency** rất quan trọng trong nhiều ứng dụng, đặc biệt là cho các ứng dụng liên quan đến tài chính, ngân hàng, ... Một lỗi nhỏ có thể trở thành một thảm kịch nếu chúng ta không quan tâm đến nó một cách nghiêm túc. Lần này, tôi sẽ nói một chút về Locking và làm thế nào bạn có thể sử dụng nó hiệu quả.
 

@@ -5,6 +5,7 @@ date: 2017-02-23 17:00
 comments: true
 external-url:
 categories: Ruby-on-Rails
+keywords: best resources, best resources for rails, rails ebook, ebook
 ---
 >What are the best resources help me lean quickly Ruby on Rails? This is a question which I asked myself when I begin learning Ruby on Rails. After a long time self-study and working with RoR, today I want to share some experience about awesome sites, blogs and books which I used to. Hope that they are useful for you. I assume you are familiar with Ruby.
 

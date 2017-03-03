@@ -5,6 +5,8 @@ date: 2017-03-03 12:00
 comments: true
 external-url:
 categories: Ruby-on-Rails
+tags: amazone s3, s3, upload with rails, carrierwave
+keywords: amazone s3, s3, upload with rails, carrierwave
 ---
 >Đối với ứng dụng web sử sụng Rails hay bất cứ ngôn ngữ hay framework nào khác thì việc lưu trữ các hình ảnh đổi lúc sẽ phát sinh nhiều bất tiện. Với dịch vụ S3 mà Amazon cung cấp chúng ta có thể lưu trữ và các hình ảnh đó sẽ tự động resize với kích thước mà chúng ta không cần làm gì hết. Để sử dụng S3 cho Rails app chúng ta cần thực hiện theo các bước sau:
 

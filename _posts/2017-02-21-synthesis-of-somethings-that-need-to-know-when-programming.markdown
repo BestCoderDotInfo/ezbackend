@@ -5,6 +5,7 @@ date: 2017-02-21 18:00
 comments: true
 external-url:
 categories: Programming
+keywords: programming, rails, sublime, git workflow, git
 ---
 >Synthesis Of Somethings That Need To Know When Programming 
 

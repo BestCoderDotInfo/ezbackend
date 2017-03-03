@@ -5,6 +5,7 @@ date: 2017-02-19 00:00
 comments: true
 external-url:
 categories: Ruby-on-Rails
+keywords: delegate, rails, delegate in rails
 ---
 >Delegation is a quite common practice in Ruby projects, if you consider proxies, mixins and composition as the ingredient of the **Delegation Pattern**.
 

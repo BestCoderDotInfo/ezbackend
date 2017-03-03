@@ -5,6 +5,7 @@ date: 2017-02-18 18:00
 comments: true
 external-url: deploy-your-rails-applicaiton-to-aws-with-passenger-and-apache-on-ubuntu
 categories: AWS
+keywords: aws, deploy rails app, deploy rails to aws, passenger, apache2
 ---
 >As developers, we are usually concerned about the development part of any application. We don’t think much about the deployment part as we consider it to be a responsibility of the SysAdmins. But many times, we don’t have a dedicated SysAdmin available, so we have to put on the SysAdmin hat and get things done. There are many options to deploy your Rails application. Today, I will cover how to deploy a Rails application to Amazon Web Services (AWS).
 
