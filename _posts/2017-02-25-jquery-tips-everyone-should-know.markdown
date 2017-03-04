@@ -6,6 +6,11 @@ comments: true
 external-url: jquery-tips-everyone-should-know
 categories: jQuery
 keywords: jquey, jQuery, jQuery tips, tips
+excerpt: As developers, we are usually using jQuery for web application. This is jQuery tips everyone should know.
+image:
+  feature: ../../assets/jquery-tips.jpg
+  credit: 
+  creditlink:
 ---
 >As developers, we are usually using jQuery for web application. This is jQuery tips everyone should know.
 

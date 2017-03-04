@@ -6,6 +6,7 @@ comments: true
 external-url:
 categories: My-stories
 keywords: about me
+excerpt: I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths.
 ---
 
 > I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths.

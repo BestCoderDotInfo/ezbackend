@@ -6,6 +6,11 @@ comments: true
 external-url: 
 categories: Ruby-on-Rails
 keywords: rails, ruby on rails, setup rails, install rails, mailer rails, sendgrid, heroku
+excerpt: Here is a demo of how I created an email with user-mailer in rails
+image:
+  feature: ../../assets/send-email-with-sendgrid-rails.png
+  credit: 
+  creditlink:
 ---
 >Here is a demo of how I created an email with user-mailer in rails
 

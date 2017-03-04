@@ -1,21 +1,70 @@
-# Site settings
-title: "The Best Coder Blog"
-author: "Quân `Libra` Minh Nguyễn"
-description: "This is a blog about website and mobile development, some mathematics, and the occasional philosophy. Not necessarily in that order."
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: The Best Coder Blog
+email: admin@bestcoder.info
+description: This is a blog about website and mobile development, some mathematics, and the occasional philosophy. Not necessarily in that order.
 keywords: "Software Engineering, Mathematics, Philosophy, Scala, Epistemology, Existentialism, Programming, Machine-Learning, Artificial Intelligence, Statistics, Probability, Puzzles, Website Development, Mobile Development"
-biography: "I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths."
-colophon: "© MMXIII — MMXVI by Hugo Sereno Ferreira.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site is hosted at <a href='https://pages.github.com/'>Github Pages</a> and created with <a href='http://jekyllrb.com/'>Jekyll</a>."
+url: http://bestcoder.info
 
-baseurl: ""
-url: "http://bestcoder.info"
 
-twitter_username:
-github_username: minhquan4080
-linkedin_username: quanmnlibra
-facebook_username: librauit
-google-analytics: UA-92230923-1
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Saigon
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
 
-simple_search: http://google.com/search
-markdown: kramdown
-highlighter: rouge
-permalink: /blog/:year/:month/:day/:title/
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Libra
+  avatar:
+  job: "Ruby on Rails Developer"
+  bio: "I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths."
+  email: me@bestcoder.info
+  disqus-shortname: mnqun
+  twitter: #username
+  facebook: librauit
+  google:
+    plus: #username
+    analytics: UA-92230923-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: minhquan4080
+  gitlab: #username
+  stackoverflow: 3718830/libra
+  linkedin: quanmnlibra
+  skype: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  500px: #username
+  codepen: #username

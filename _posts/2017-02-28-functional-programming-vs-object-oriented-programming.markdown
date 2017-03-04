@@ -6,6 +6,7 @@ comments: true
 external-url: 
 categories: Programming
 keywords: functional programming, object oriented programming
+excerpt: When do you choose functional programming over object oriented?
 ---
 >When do you choose functional programming over object oriented?
 

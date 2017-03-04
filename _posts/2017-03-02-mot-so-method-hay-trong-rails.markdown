@@ -6,6 +6,11 @@ comments: true
 external-url:
 categories: Ruby-on-Rails
 keywords: method, rails, rails best method, rails style guide
+excerpt: Nếu các bạn đã từng lập trình ROR chắc hẳn không còn xa lạ, nhưng đối với các bạn mới bắt đầu thì chúng thật sự hữu ích.
+image:
+  feature: ../../assets/ruby-on-rails-method.png
+  credit: 
+  creditlink:
 ---
 >Nếu các bạn đã từng lập trình ROR chắc hẳn không còn xa lạ, nhưng đối với các bạn mới bắt đầu thì chúng thật sự hữu ích. 
 
