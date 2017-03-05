@@ -8,7 +8,7 @@ categories: ReactNative
 keywords: react, react native, reactnative, ios, android
 excerpt: Chắc hẳn các bạn không còn xa lạ với React Native (RN) nên mình sẽ không giới thiệu nó là cái gì nữa mà sẽ bắt tay vào làm một app hello react native ngay :D
 image:
-  feature: ../../assets/deploy-your-rails-app-to-aws.png
+  feature: ../../assets/react-native-best-coder.png
   credit: 
   creditlink:
 ---
