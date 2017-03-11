@@ -4,7 +4,7 @@ title: Working With Complex SQL Statements In Rails And ActiveRecord
 date: 2017-03-09 18:00
 comments: true
 external-url: 
-categories: ReactNative
+categories: Ruby-on-Rails
 keywords: ruby, rails, ruby on rails, sql, complex sql, sql statements, complex sql statements, active record
 excerpt: Rails (via ActiveRecord) makes it super easy to work with your data, and for most simple tasks insulates you from having to think too hard about SQL. But eventually, everyone hits the ORM wall, and needs to start casting SQL spells around to get the data that they want. And writing SQL can really feel like that sometimes, like an incantation that you speak over your database — and magically the data rearranges itself into the form that you need.
 image:
