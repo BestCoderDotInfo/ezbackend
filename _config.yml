@@ -1,70 +1,43 @@
-#
-###################################
-# Site wide configuration
-####################################
-#
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+highlighter: rouge
+markdown: kramdown
+disqus: mnqun
+google_analytics:
+timezone:          Asia/Saigon
 title: The Best Coder Blog
-email: admin@bestcoder.info
 description: This is a blog about website and mobile development, some mathematics, and the occasional philosophy. Not necessarily in that order.
 keywords: "Software Engineering, Mathematics, Philosophy, Scala, Epistemology, Existentialism, Programming, Machine-Learning, Artificial Intelligence, Statistics, Probability, Puzzles, Website Development, Mobile Development"
 url: http://bestcoder.info
 
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: The Best Coder Blog
 
-#
-###################################
-# Jekyll configuration
-####################################
-#
-timezone:          Asia/Saigon
-markdown:          kramdown
-highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-#
-###################################
-# Site Owner configuration
-####################################
-#
-owner:
-  name: Libra
-  avatar:
-  job: "Ruby on Rails Developer"
-  bio: "I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths."
+author:
+  name: Libra-
   email: me@bestcoder.info
-  disqus-shortname: mnqun
-  twitter: #username
-  facebook: librauit
-  google:
-    plus: #username
-    analytics: UA-92230923-1
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
   github: minhquan4080
-  gitlab: #username
-  stackoverflow: 3718830/libra
+  twitter: libraQmn
+  pinterest:
   linkedin: quanmnlibra
-  skype: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  500px: #username
-  codepen: #username
+  bio: I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths.
+  email_md5: 63d3b6ee006fd7c195170b07b3082ee5
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH:
+
+gems:
+  - jekyll-paginate
