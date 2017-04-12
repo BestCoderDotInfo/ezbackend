@@ -19,7 +19,7 @@ Take, for example, the problem of calculating a duration in business hours. Let�
 (NOTE: This post assumes you are one of the cool kids and are using Postgres as your DB.)
 To start out, let’s get a duration of simple calendar time.
 
-```
+```ruby
 # id integer
 # opened_at timestamp
 # closed_at timestamp
@@ -32,20 +32,20 @@ end
 
 Now, you can say
 
-```
+```ruby
 Ticket.with_calendar_duration
 ```
 
 which will add an additional column called duration that you can access ruby as usual. Note that there is nothing you need to do in your Rails model file (no need for an attr_accessor etc) for this to happen. ActiveRecord will simply add any extra columns selected to the model automagically. (However, since Rails has no type information for the column, it thinks the Postgres interval type is a String).
 
-```
+```ruby
 Ticket.with_calendar_duration.first.duration  #=> "10 days 11:00:00.000164"
 ```
 
 So, that was easy. Now for the hard (fun) part. We need to calculate the time difference between `opened_at` and `closed_at` but taking into account only M-F and 8a-5p PDT. We are going to basically construct a raw SQL query, and take advantage of Common Table Expressions (CTEs) in Postgres, which are underused but full of awesome.
 The SQL (the explanation of which I will defer until another blog post) we need is wrapped up in an AR scope:
 
-```
+```ruby
 # id integer
 # opened_at timestamp
 # closed_at timestamp
@@ -94,19 +94,19 @@ end
 
 So, now we can say
 
-```
+```ruby
 Ticket.with_biz_duration.map(&:duration)  #=>  [4760, 2700, 3320, 15980, 13500]
 ```
 
 But, this ‘scope’ is not really an AR scope, as it does not return a chainable AR Relation. So you have to always use it at the end of the chain. But the way it currently stands, the query doesn’t know anything about any existing relations, so this won’t work
 
-```
+```ruby
 Ticket.where(:something => 'else').with_biz_duration
 ```
 
 It would be cool if we could capture the records in the existing scope, and only use those in our query. We can achieve this with another CTE 
 
-```
+```ruby
 # id integer
 # opened_at timestamp
 # closed_at timestamp
@@ -166,14 +166,14 @@ end
 
 So we basically converted the current scope to a SQL statement, and used that as a CTE to run the query against, thus limiting the rows we are operating against. We can use other scopes or where clauses as long as we call our `with_biz_duration` scope at the end of the chain.
 
-```
+```ruby
 Ticket.where(:id => 1).with_biz_duration.map(&:duration)  #=>  [4760]
 ```
 
 Now to take it to the bitter end, let’s add the ability to pass in the business hours we want, as well as the timezone.
 One issue with our `tickets` table is that the `opened_at` and `closed_at` fields were created as `timestamp` fields, which in Postgres do not have any timezone information. If we assume our DB server was configured to use UTC as the default timezone, then we need to cast the fields into fields with a UTC time zone, which we then cast again into the timezone we want.
 
-```
+```ruby
 # id integer
 # opened_at timestamp
 # closed_at timestamp
@@ -236,7 +236,7 @@ end
 
 So, now we can say
 
-```
+```ruby
 Ticket.where(:id => 1).with_biz_duration('01:00', '03:00', 'America/New_York').map(&:duration) #=> [960]
 ```
 

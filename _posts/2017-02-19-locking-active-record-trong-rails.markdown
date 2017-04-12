@@ -14,13 +14,13 @@ excerpt: Như các bạn đã biết, **Data consistency** rất quan trọng tr
 
 Hãy tưởng tượng bạn đang xây dựng một ứng dụng, trong đó mỗi người sẽ có một tài khoản với một tiền ảo. Và người dùng có id là 5 đang truy cập vào trang web để mua một số món hàng, chúng ta nhận vào tài khoản như thế này :
 
-```
+```ruby
 account = Account.find_by_user_id(5)
 ```
 
 Sau khi chọn được món hàng yêu thích của mình với giá $ 50, nhấp chuột kiểm tra và bắt đầu trả tiền cho món hàng đó. Trước khi thực hiện yêu cầu, đầu tiên chúng ta sẽ kiểm tra xem anh ta có đủ số tiền trong tài khoản của mình, và nếu anh ta thoả mãn điều kiện, chúng ta sau đó sẽ giảm số dư trong tài khoản của anh ấy một số tiền tương ứng với giá của mặt hàng đó.
 
-```
+```ruby
 if account.balance >= item.price
     account.balance = account.balance - item.price
     #some other long processes here
@@ -30,7 +30,7 @@ end
 
 Điều đó có vẻ dễ dàng phải không? Tuy nhiên, nếu những gì anh chàng này sẽ mở ra một tab của trang web, chọn một món hàng khác với giá $ 80 và bằng cách nào đó đồng thời nhấp chuột kiểm trên cả các tab. Mặc dù nó là rất hiếm, có thể có một cơ hội khi các yêu cầu trên tab đầu tiên và thứ hai đến máy chủ gần như cùng một thời điểm, và họ đều được xử lý bởi máy chủ đồng thời. Đây là cách mà request ở tab thứ nhất đã được thực hiện :
 
-```
+```ruby
 #account.balance = 100
 account = Account.find_by_user_id(5) 
 
@@ -48,7 +48,7 @@ end
 
 Nhưng sau khi thực hiện `account.balance = account.balance - item.price` và trước khi lưu vào tài khoản, CPU thực hiện các yêu cầu thứ hai (với cùng code) :
 
-```
+```ruby
 account = Account.find_by_user_id(5) 
 #account.balance is still 100
 
@@ -73,7 +73,7 @@ Nói chung, có hai loại Locking : **Optimistic** và **Pessimistic**. Từ t�
 
 Trong loại này, nhiều người dùng có thể truy cập cùng một đối tượng để đọc giá trị của nó, nhưng nếu hai người dùng thực hiện cập nhật thì sẽ phát sinh mâu thuẫn, chỉ có một người sử dụng sẽ thành công và một trong những người khác sẽ không được thực hiện.
 
-```
+```ruby
 p1 = Person.find(1)
 p2 = Person.find(1)
 
@@ -96,7 +96,7 @@ Với loại locking này, chỉ có người dùng đầu tiên truy cập đ�
 
 Rails sẽ thực hiện **Pessimistic Locking** bằng cách phát hành truy vấn đặc biệt trong cơ sở dữ liệu. Ví dụ, giả sử bạn muốn lấy đối tượng tài khoản và khóa nó cho đến khi bạn hoàn thành việc cập nhật:
 
-```
+```ruby
 account = Account.find_by_user_id(5)
 account.lock!
 #no other users can read this account, they have to wait until the lock is released

@@ -18,7 +18,7 @@ First off, from the [Rails Guide](http://guides.rubyonrails.org/action_mailer_ba
 
 Then in then `user_mailer.rb` create a function that sends the email :
 
-```
+```ruby
 class UserMailer < ActionMailer::Base
    default from: "me@gmail.com" 
 
@@ -32,7 +32,7 @@ end
 
 Pretty simple right?  Now we need to create the view.  This is where you can design the email and whatever text you want to put in it. Create a file in the `app/views/user_mailer` folder.  The name of the file should match the name of the function you defined in the user_mailer.rb file.  Mine is `welcome_email.html.erb`
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +52,7 @@ Now that we have the function to send the email, and the text of the email itsel
 
 You can call the mailer function wherever you want to send the email, in this case we can just send it when a new user signs up
 
-```
+```ruby
 class UserController < ApplicationController
     def create
         @user = User.new(params[:user])
@@ -68,7 +68,7 @@ end
 
 Now we need to set up the config files for the email address we will use to send emails. For development, in the `config/environment/development.rb` file:
 
-```
+```ruby
 config.action_mailer.raise_delivery_errors = true
 config.action_mailer.default_url_options = {:host => 'localhost:3000'}
 
@@ -91,7 +91,7 @@ So great, now we have it set up so a new user will receive an email, at least in
 So the first thing to do before moving to production is to protect the sensitive email sign in information that we just put in the `config/environment/development.rb`.  The easiest way to do this is to use environment variables, and a simple way to do that is to use the [figaro gem](https://github.com/laserlemon/figaro).  I wrote a quick post on how to setup environment variables with the [figaro gem here](https://howilearnedrails.wordpress.com/2013/08/05/environment-variables-with-the-figaro-gem/), so take a minute and set that up in your app first.  This will keep your email login info from getting pushed to github, in case you are using a public repository.  It should then look something like this:
 
 
-```
+```ruby
 user_name: ENV['GMAIL_USERNAME_DEV']
 password: ENV['GMAIL_PASSWORD_DEV']
 ```
@@ -112,7 +112,7 @@ or simply running heroku config will show you all the heroku config variables.
 Next, go to `config/environment/production.rb` and add our email settings there:
 
 
-```
+```ruby
 config.action_mailer.smtp_settings = {
     address: "smtp.sendgrid.ner",
     port: "587",

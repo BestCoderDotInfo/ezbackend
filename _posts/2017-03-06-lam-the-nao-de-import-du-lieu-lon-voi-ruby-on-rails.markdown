@@ -14,7 +14,7 @@ image:
 ---
 Sử dụng ActiveRecord để insert thêm dữ liệu vào database là việc làm hết sức thường xuyên và quá quen thuộc với mọi người. Để thực hiện import dữ liệu vào database, thông thường ta sẽ chạy một vòng lặp để duyệt qua tất cả các dòng dữ liệu trong file, tạo ra đống các ActiveRecord object để thực hiện insert vào database (DB). Đại loại sẽ kiểu như thế này :
 
-```
+```ruby
 data_file = ".../test.csv"
 CSV.foreach(data_file) do |attrs|
     Model.create attr1: attrs[0], ....
@@ -49,7 +49,7 @@ Phân tích một chút về cặp log gồm 3 dòng bên trên. Mỗi dòng s�
 
 Thay vì mỗi lần insert một cửa hàng ta tạo 1 db transaction, ta sẽ chỉ sử dụng một transaction duy nhất để commit cả 1000 cửa hàng. Rất đơn giản, chỉ việc bao đoạn code của chúng ta với `ActiveRecord::Base.transaction`
 
-```
+```ruby
 data_file = ".../test.csv"
 ActiveRecord::Base.transaction do
     CSV.foreach(data_file) do |attrs|
@@ -82,7 +82,7 @@ INSERT INTO shops (name, lat, long) VALUES ('A', '123', '321'), ('B', '113', '12
 Vậy nên tội gì chúng ta không tận dụng để giảm số lần kết nối tới db đi. Sử dụng đặc tính này, ta sẽ chỉ cần tới 3 kết nối tới db thôi.
 Để làm việc này bạn có thể viết câu SQL thuần, rồi execute nó, hoặc có thể sử dụng gem để nhìn nó sạch sẽ sáng sủa hơn. Ví dụ ở đây mình dùng gem `activerecord-import`. Đoạn code mới của ta sẽ có dạng :
 
-```
+```ruby
 data_file = ".../test.csv"
 shops = CSV.read datafile
 attributes = [:name, :lat, :long]

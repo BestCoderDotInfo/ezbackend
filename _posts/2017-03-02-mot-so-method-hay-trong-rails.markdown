@@ -16,14 +16,14 @@ image:
 
 Sử dụng Object.try(:method_name) thay vì kiểm tra nil
 
-```
+```ruby
 if parent.children && parent.children.singleton?
   singleton = parent.children.first
   send_mail_to(singleton)
 end
 ```
 
-```
+```ruby
 # nếu children là nil thì try(:singleton?) cũng trả về nil 
 # nếu children không nil thì children.singleton? được gọi như bình thường
 if parent.children.try(:singleton?)
@@ -34,7 +34,7 @@ end
 
 sử dụng blank?/present?
 
-```
+```ruby
 # String
 name = nil
 name.blank? # => true
@@ -64,7 +64,7 @@ params.blank? # => false
 
 **present?** ngược lại với **blank?**.
 
-```
+```ruby
 # String
 name = ""
 name.present? # => false
@@ -72,9 +72,9 @@ name = "Tom"
 name.present? # => true
 ```
 
-sử dụng presence
+sử dụng `presence`
 
-```
+```ruby
 if user.name.blank?
   name = "What's your name?"
 else
@@ -82,18 +82,20 @@ else
 end
 ```
 
-`name = user.name.presence || "What's your name?"`
+```ruby
+name = user.name.presence || "What's your name?"
+```
 
 `"".presence` hoặc `[].presence` sẽ trả về `nil`.
 
-```
+```ruby
 name = ""
 puts name.presence || "What's your name?" # => What's your name?
 ```
 
 Ngoài ra còn có 1 ví dụ rất thú vị về `presence` như sau.
 
-```
+```ruby
 # News nếu có ít nhất là 1 news thì gửi mail và tweet
 good_news = company.good_news
 if good_news.count > 0
@@ -104,7 +106,7 @@ end
 
 Đoạn mã trên nếu dùng `presence`
 
-```
+```ruby
 if good_news = company.good_news.presence
   send_mail(good_news)
   tweet(good_news)
@@ -115,7 +117,7 @@ end
 
 Tương tự như thế, khi muốn kiểm tra điều kiện “trong trường hợp string có 1 giá trị nào đó”.
 
-```
+```ruby
 # Nếu name là nil hoặc là string trống （""） thì không hiện message lên
 name = blog.user.name
 if name.present?
@@ -123,7 +125,7 @@ if name.present?
 end
 ```
 
-```
+```ruby
 if name = blog.user.name.presence
   show_message("Hello, #{name}!")
 end
@@ -134,7 +136,7 @@ khi kiểm tra sự tồn tại của 1 string thì nên dùng blank? thay vì n
 
 Mệnh đề “string không có giá trị” thường không cần phân biệt nil và "". Khi sử dụng nil? thì lại cho 2 kết quả khác nhau.
 
-```
+```ruby
 if email.nil?
   # => nếu email là "" thì vẫn được coi là có nhập dữ liệu và không gọi puts 
   puts "Please input email!"
@@ -143,7 +145,7 @@ end
 
 Đó cũng là lý do nên sử dụng `blank?` hơn.
 
-```
+```ruby
 if email.blank?
   # => Nếu email là "" hoặc " " thì xử lý như chưa nhập dữ liệu và gọi puts
   puts "Please input email!"
@@ -156,13 +158,13 @@ khi cần filter, nên dùng query thay vì logic
 
 Ruby cung cấp rất nhiều method hay và đơn giản để thao tác với array, nhưng khi cần thực hiện filter trong model của Rails, thì nên sử dụng query để tốc độ xử lý được nhanh hơn.
 
-```
+```ruby
 def admin_users
   User.all.select(&:admin?)
 end
 ```
 
-```
+```ruby
 def admin_users
   User.where(admin: true)
 end
@@ -172,13 +174,13 @@ dùng pluck thay vì map
 
 `pluck` là method để lấy 1 column cho trước trong các record, mà không load toàn bộ các record đó. Vì thế mà tốc độ xử lý và RAM cũng hiệu quả hơn.
 
-```
+```ruby
 def admin_user_ids
   User.where(admin: true).map(&:id)
 end
 ```
 
-```
+```ruby
 def admin_user_ids
   User.where(admin: true).pluck(:id)
 end
@@ -192,14 +194,14 @@ Ví dụ, không dùng Date.today mà dùng `Date.current`, không dùng `Time.n
 
 các method thời gian hay
 
-```
+```ruby
 Date.current # => Tue, 05 Nov 2013
 
 Date.yesterday  # => Tue, 04 Nov 2013
 Date.tomorrow # =>  # => Tue, 06 Nov 2013
 ```
 
-```
+```ruby
 Date.current # => 2013-11-05
 
 2.years.ago   # => 2011-11-05 06:21:40 +0900
@@ -213,7 +215,7 @@ Date.current # => 2013-11-05
 
 Ngoài ra còn rất nhiều cách viết khác nhau để lấy giá trị ngày tháng đặc biệt.
 
-```
+```ruby
 date = Date.current # => 2013-11-05
 
 date.yesterday # => 2013-11-04
@@ -249,7 +251,7 @@ date.since(2.months) # => 2014-01-05
 
 `week`, `year` cũng thế.
 
-```
+```ruby
 date = Date.current # => 2013-11-05
 
 date.beginning_of_month # => 2013-11-01
@@ -264,7 +266,7 @@ datetime.beginning_of_hour # => 2013-11-05T06:00:00+09:00
 datetime.end_of_hour       # => 2013-11-05T06:59:59+09:00
 ```
 
-```
+```ruby
 date = Date.current # => 2013-11-05
 date.tuesday?     # => true
 
@@ -275,7 +277,7 @@ date.next_week(:monday) # => 2013-11-11
 
 các method thay đổi string thành số nhiều, số ít, …
 
-```
+```ruby
 "my_book".camelize # => "MyBook"
 
 "MyBook".underscore # => "my_book"
@@ -309,7 +311,7 @@ các method thay đổi string thành số nhiều, số ít, …
 
 squish xoá các space không cần thiết
 
-```
+```ruby
 "    My    \r\n  \t   \n   books       ".squish # => "My books"
 ```
 

@@ -18,7 +18,7 @@ Chúng ta hãy cùng nhau tìm hiểu qua bài viết này. Trước hết ta c�
 - Bảng comments lưu các thông tin về các comments của mỗi User.
 - Một user có nhiều comments.
 
-```
+```ruby
 class User
   has_many :comments
 end
@@ -38,7 +38,7 @@ Chú ý đừng nhầm lẫn với từ `cache` (lưu vào bộ nhớ tạm) tro
 
 Count có vẻ như được biết tới nhiều hơn. Hãy cùng xem count hoạt động như thế nào
 
-```
+```bash
 User.count
 
    (0.3ms)  SELECT COUNT(*) FROM "users"
@@ -60,7 +60,7 @@ User.count
 
 Hãy xem length thực hiện như thế nào...
 
-```
+```ruby
 users = User.all
 
  users.length
@@ -75,7 +75,7 @@ users.length
 
 User.length 
 
-undefined method `length' for #
+undefined method 'length' for #
 ```
 
 => Như vậy rails đã vào database để load tất cả các users về và đo kích thước của mảng kết quả. Thông thường cách này sẽ lâu hơn việt sử dụng `User.all.count`
@@ -91,7 +91,7 @@ Khi gọi `users.length` lần thứ 2 chúng ta có kết quả 52 vì length s
 
 Vậy còn size?
 
-```
+```ruby
 User.all.size
 
    (0.3ms)  SELECT COUNT(*) FROM "users"
@@ -110,7 +110,7 @@ User.all.size
 
  User.size
 
-undefined method `size' for #
+undefined method 'size' for #
 ```
 
 => Vậy là size sẽ vào database gọi đến `SQL SELECT COUNT(*)` khi chưa có cache (tức là khi chưa có các bản ghi users trên bộ nhớ tạm), khi đã có rồi thì đếm luôn số bản ghi trên bộ nhớ tạm.
@@ -127,7 +127,7 @@ Size sẽ chọn cách nào tốt nhất để lấy ra kết quả nhanh nhất
 
 ### a. count
 
-```
+```ruby
 User.first.comments.count
 (0.2ms)  SELECT COUNT(*) FROM "comments" WHERE "comments"."user_id" = ?  [["user_id", 1]]
 ```
@@ -136,7 +136,7 @@ User.first.comments.count
 
 ### b. length
 
-```
+```ruby
 User.first.comments.length
 SELECT "comments".* FROM "comments" WHERE "comments"."user_id" = ? [["user_id", 1]]
 ```
@@ -146,7 +146,7 @@ Và sẽ đếm trực tiếp nếu như đã có cache.
 
 ### c. size
 
-```
+```ruby
 User.first.comments.size
 SELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1
 ```

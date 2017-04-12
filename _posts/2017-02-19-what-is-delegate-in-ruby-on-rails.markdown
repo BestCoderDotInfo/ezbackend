@@ -22,7 +22,7 @@ If your project includes ActiveSupport, and every Rails project does, you have a
 
 For instance, consider a standard Post model which belongs to a User.
 
-``` 
+```ruby 
 class Post
   belongs_to :user
 end
@@ -34,7 +34,7 @@ end
 
 You might want a call to post.name to return the name of the user associated to the given post. Normally, you would create a new name method as follows
 
-```
+```ruby
 class Post
   belongs_to :user
 
@@ -47,7 +47,7 @@ end
 
 The same code expressed using the delegate method.
 
-```
+```ruby
 class Post
   belongs_to :user
   delegate :name, :to => :user, :allow_nil => true
@@ -56,7 +56,7 @@ end
 
 The delegate method can be used in any context, it’s not limited to ActiveRecord models. For example, your custom queue wrapper can delegate to the internal queue implementation some specific methods.
 
-```
+```ruby
 class QueueManager
 
   attr_accessor :queue
@@ -85,7 +85,7 @@ The delegate method understand some additional options, useful to customize the 
 
 This is my favorite option. The `:prefix` can be set to true to prefix the delegate method with the name of the object being delegated to. You can also provide a custom prefix.
 
-```
+```ruby
 class Post
   belongs_to :user
 
@@ -99,7 +99,7 @@ end
 
 The `:allow_nil` option allows the class to delegate the method to an object that might be `nil`. In this case, a call to the delegated method will return nil. The default behavior is to raise a `NoMethodError`.
 
-```
+```ruby
 class Post
   belongs_to :user
   delegate :name, :to => :user, :prefix => true

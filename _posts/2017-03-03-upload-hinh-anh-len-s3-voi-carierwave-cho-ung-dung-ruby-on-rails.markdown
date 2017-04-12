@@ -17,7 +17,7 @@ image:
 
 >Đầu tiên chúng ta cần thêm vào `Gemfile` :
 
-```
+```ruby
 gem 'carrierwave'
 
 gem 'fog' # Support storing file in AWS
@@ -35,7 +35,7 @@ gem 'fog' # Support storing file in AWS
 
 Nó nên có cấu trúc như thế này :
 
-```
+```ruby
 class CoverImageUploader < CarrierWave::Uploader::Base
 
   storage :fog
@@ -58,7 +58,7 @@ end
 
 >Chỉnh sử lại model tương ứng 
 
-```
+```ruby
 class Post < ActiveRecord::Base
   mount_uploader :cover_image, CoverImageUploader
 
@@ -77,7 +77,7 @@ Tạo file:
 
 với cấu trúc như sau :
 
-```
+```ruby
 CarrierWave.configure do |config|
   config.fog_credentials = {
     provider: 'AWS',

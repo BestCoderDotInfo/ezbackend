@@ -14,7 +14,7 @@ Hôm nay , mình cũng xin giới thiệu tới các bạn cách xây dựng 1 �
 
 Sau khi khởi tạo app rails thì chúng ta thêm vào Gemfile:
 
-```
+```ruby
 gem 'private_pub'
 gem 'thin'
 ```

@@ -16,7 +16,7 @@ image:
 When you `copy` an object that contains other objects, like an `Array`, only a reference to these objects is copied.
 You can see that in action here:
 
-```
+```ruby
 food = %w( bread milk orange )
 
 food.map(&:object_id)       # [35401044, 35401020, 35400996]
@@ -26,7 +26,7 @@ food.clone.map(&:object_id) # [35401044, 35401020, 35400996]
 
 Using the **Marshal class**, which is normally used for [serialization](https://en.wikipedia.org/wiki/Serialization), you can create a ‘deep copy’ of an object.
 
-```
+```ruby
 def deep_copy(obj)
   Marshal.load(Marshal.dump(obj))
 end
@@ -34,13 +34,13 @@ end
 
 The results:
 
-```
+```ruby
 deep_copy(food).map(&:object_id) # [42975648, 42975624, 42975612]
 ```
 
 ## 2. Different ways to call a lambda
 
-```
+```ruby
 my_lambda = -> { puts 'Hello' }
 my_lambda.call
 my_lambda[]
@@ -56,7 +56,7 @@ The Array class can take an argument **+ a block**, which lets you create an arr
 
 Example:
 
-```
+```ruby
 Array.new(10) { rand 300 }
 ```
 
@@ -64,7 +64,7 @@ This will generate an array with 10 [random numbers](http://www.blackbytes.info/
 
 ## 4. True, false and nil are objects
 
-```
+```ruby
 true.class  # TrueClass
 
 
@@ -79,7 +79,7 @@ This is the [singleton pattern](http://c2.com/cgi/wiki?SingletonPattern) in acti
 
 ## 5. Lambdas are strict about arguments, but Procs don’t care
 
-```
+```ruby
 my_lambda = ->(a, b)  { a + b }
 my_proc   = Proc.new  { |a, b| a + b }
 
@@ -95,7 +95,7 @@ my_proc.call(2)
 The **ruby** command has a number of interesting options you can use.
 For example, with the **-e** flag you can pass in a snippet of code to be executed.
 
-```
+```bash
 ruby -e '5.times { puts "Fun with Ruby" }'
 ```
 
@@ -106,13 +106,13 @@ You can find more by using the **-h** flag.
 Ever wanted to know how **irb** works? Well, this is a super-simple version of it.
 Remember what ‘REPL’ stands for: Read-Eval-Print Loop.
 
-```
+```bash
 ruby -n -e 'p eval($_)'
 ```
 
 You won’t get a prompt, but go ahead and type some Ruby code.
 
-```
+```bash
 "A" * 5
 
 "AAAAA"
@@ -120,7 +120,7 @@ You won’t get a prompt, but go ahead and type some Ruby code.
 
 This works because the **-n** flag does this:
 
-```
+```bash
 -n    assume 'while gets(); ... end' loop around your script
 ```
 
@@ -132,7 +132,7 @@ And **$_ is** a global variable. Which contains the following:
 
 There isn’t any Ruby method to unfreeze an object, but using the **Fiddle** class you can reach into Ruby internals to make it happen.
 
-```
+```ruby
 require 'fiddle'
 
 str = 'water'.freeze
@@ -152,7 +152,7 @@ Don’t try this at home!
 
 Ruby objects have an identifier or ‘id’ number you can access using the **object_id** method. Some objects have a fixed id: Fixnums, true, false & nil.
 
-```
+```ruby
 false.object_id # 0
 
 true.object_id  # 2
@@ -171,7 +171,7 @@ Bonus: The maximum Fixnum is `1073741823`, after that you get a Bignum object.
 
 If you are working in `irb` and want to avoid filling your screen with the contents of some really big array or string you can just append `;` at the end of your code.
 
-```
+```ruby
 require 'rest-client'
 
 RestClient.get('blackbytes.info');
@@ -183,7 +183,7 @@ Try again without the `;` to see the difference
 
 Here is a code example:
 
-```
+```ruby
 def foo
   bar
 end
@@ -197,18 +197,17 @@ foo
 
 Output:
 
-```
+```bash
 -:3:in 'foo'
 
--:10:in '
-'
+-:10:in ''
 ```
 
 If you need the current method name you can use `__method__` or `__callee__`.
 
 Bonus! Convert any value into a boolean.
 
-```
+```ruby
 !!(1)   # true
 
 !!(nil) # false

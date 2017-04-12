@@ -78,7 +78,7 @@ Dùng tổ hợp phím **Command⌘ + R** trong máy ảo iOS để reload sự 
 
 - Ta sẽ tạo 1 file mới HelloWorld.js:
 
-```
+```javascript
 'use strict';
 
   import React, { Component } from 'react';
@@ -130,7 +130,7 @@ Dùng tổ hợp phím **Command⌘ + R** trong máy ảo iOS để reload sự 
 
 `'use strict';` : Dòng này kích hoạt chế độ Strict Mode, nó tăng cường khả năng xử lí lỗi của Javascript.
 
-```
+```javascript
 render() {
           return (
             <View style={styles.container}>
@@ -151,7 +151,7 @@ render() {
 
 Đoạn này sẽ tạo ra một class chỉ có function duy nhất là render. Hàm render sẽ return lại những gì sẽ được hiển thị lên màn hình. Đoạn code trong phần return sử dụng JSX (Javascript syntax extension). Nếu bạn đã làm việc với React.JS thì đoạn code trên rất quen thuộc.
 
-```
+```javascript
 const styles = StyleSheet.create({
         container: {
           flex: 1,
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
 
 và chỉnh sửa một tí file `index.ios.js`
 
-```
+```javascript
 'use strict';
 
         import React, { Component } from 'react';
@@ -220,7 +220,7 @@ và chỉnh sửa một tí file `index.ios.js`
         AppRegistry.registerComponent('HelloReact', () => HelloReact
 ```
 
-```
+```javascript
 import {
     AppRegistry,
     StyleSheet,
@@ -234,13 +234,13 @@ import {
 
 `NavigatorIOS` ở đây sẽ có nhiệm vụ tạo ra một navigation controller, và gán route mặc định cho nó là component HelloWorld, đồng thời đặt tiêu đề sẽ hiển thị trên navigation bar.
 
-```
+```javascript
 import HelloWorld from './HelloWorld';
 ```
 
 Đoạn này load class `HelloWorld` từ file `HelloWorld.js` để sử dụng.
 
-```
+```javascript
 AppRegistry.registerComponent('HelloReact', () => HelloReact
 ```
 

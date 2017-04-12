@@ -14,7 +14,7 @@ excerpt: Vấn đề tưởng chừng như đơn giản nhưng đôi lúc làm b
 
 2. Clone và từ push README file lên master branch:
 
-```
+```bash
 git clone git@github.com:vinhnglx/git-merge-rebase.git 
 touch README.md
 echo "Just a simple to clear git rebase and git merge" >> README.md
@@ -25,14 +25,14 @@ git push origin master
 
 3. Tạo 2 branch mới từ master branch
 
-```
+```bash
 git checkout master -b rebase-ast
 git checkout master -b merge-ast
 ```
 
 4. Checkout đến mỗi branch and tạo một vài thay đổi
 
-```
+```bash
 git checkout rebase-ast
 touch sample_key.txt
 echo "Sample keys for project" >> sample_key.txt
@@ -41,7 +41,7 @@ git commit -m 'Create sample key file'
 git push origin rebase-ast
 ```
 
-```
+```bash
 git checkout merge-ast
 touch hello.rb
 echo "# Say hi to guys" >> hello.rb
@@ -52,7 +52,7 @@ git push origin merge-ast
 
 5. Lại checkout về master branch, update và push lên GitHub
 
-```
+```bash
 git checkout master
 echo "Hope to help you guys clear about git rebase and git merge" >> README.md
 git add README.md
@@ -62,13 +62,13 @@ git push origin master
 
 6. Master branch có sự thay đổi mới. Chúng ta cần phải sync sự thay đổi này về 2 branches: `merge-ast` và `rebase-ast`.
 
-```
+```bash
 git checkout rebase-ast
 git rebase master
 ```
 
 
-```
+```bash
 git checkout merge-ast
 git merge master
 ```
@@ -77,7 +77,7 @@ git merge master
 
 **merge-ast branch**
 
-```
+```bash
 vinhnguyen@Vinh-Nguyen ~/Documents/projects/GitHub/git-merge-rebase (rebase-ast)$ git checkout merge-ast                                                             [ruby-2.2.0]
 Switched to branch 'merge-ast'
 
@@ -92,7 +92,7 @@ vinhnguyen@Vinh-Nguyen ~/Documents/projects/GitHub/git-merge-rebase (merge-ast)$
 
 **rebase-ast branch**
 
-```
+```bash
 vinhnguyen@Vinh-Nguyen ~/Documents/projects/GitHub/git-merge-rebase (merge-ast)$ git checkout rebase-ast                                                             [ruby-2.2.0]
 Switched to branch 'rebase-ast'
 

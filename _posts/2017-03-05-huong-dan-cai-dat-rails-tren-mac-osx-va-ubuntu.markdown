@@ -18,7 +18,7 @@ Khi lập trình Ruby on Rails các bạn phải tập làm quen với Terminal 
 
 Bật Terminal lên và gõ : 
 
-```
+```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
@@ -28,7 +28,7 @@ Mình sẽ có riêng một bài viết về cách sử dụng Homebrew khi lậ
 
 Phiên bản Ruby được đề nghị cho thời gian hiện tại là : 2.4.0
 
-```
+```bash
 brew install rbenv ruby-build
 
 # Add rbenv to bash so that it loads every time you open a terminal
@@ -47,7 +47,7 @@ Phiên bản Rails điệc đề nghĩ cho thời gian hiện tại là : 4.2.4
 
 Mở terminal lên và gõ : 
 
-```
+```bash
 gem install rails -v 4.2.4
 ```
 
@@ -59,7 +59,7 @@ rbenv rehash
 
 Để kiểm tra phiên bản rails hiện tại bạn gõ:
 
-```
+```bash
 rails -v
 # Rails 4.2.4
 ```
@@ -68,7 +68,7 @@ rails -v
 
 Các bạn mở terminal lên và gõ : 
 
-```
+```bash
 rails new myapp
 cd myapp
 rails s
@@ -80,12 +80,12 @@ Mở trình duyệt lên và gõ vào đường dẫn : http://localhost:3000/ �
 
 1. Cài Đặt Ruby : 
 
-```
+```bash
 sudo apt-get update
 sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 ```
 
-```
+```bash
 cd
 git clone git://github.com/sstephenson/rbenv.git .rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
@@ -104,7 +104,7 @@ ruby -v
 ```
 
 
-```
+```bash
 echo "gem: --no-ri --no-rdoc" &gt; ~/.gemrc
 gem install bundler
 ```
@@ -113,7 +113,7 @@ gem install bundler
 
 – Cài đặt NodeJs
 
-```
+```bash
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
@@ -136,7 +136,7 @@ rails -v
 
 Các bạn mở terminal lên và gõ : 
 
-```
+```bash
 rails new myapp
 cd myapp
 rails s
