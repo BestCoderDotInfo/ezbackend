@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ruby & Rails Tricks - Có Thể Bạn Chưa Biết ?
+title: Tản mạn về chuyện chọn sếp
 date: 2017-05-04 09:00
 comments: true
 external-url: 
