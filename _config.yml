@@ -11,7 +11,8 @@ timezone:          Asia/Saigon
 title: The Best Coder Blog
 description: This is a blog about website and mobile development, some mathematics, and the occasional philosophy. Not necessarily in that order.
 keywords: "Software Engineering, Mathematics, Philosophy, Scala, Epistemology, Existentialism, Programming, Machine-Learning, Artificial Intelligence, Statistics, Probability, Puzzles, Website Development, Mobile Development"
-url: http://bestcoder.info
+url: https://bestcoder.info   # with the https protocol
+enforce_ssl: www.bestcoder.info
 
 defaults:
   -
