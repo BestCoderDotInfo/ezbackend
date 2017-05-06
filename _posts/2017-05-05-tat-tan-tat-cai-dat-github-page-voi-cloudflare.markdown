@@ -139,6 +139,8 @@ Vào Crypto và kéo xuống đến phần HTTP Strict Transport Security (HSTS)
 
 >Happy Coding 
 
+Tham khảo : [An illustrated guide to setting up your website using GitHub and Cloudflare](https://medium.freecodecamp.com/an-illustrated-guide-for-setting-up-your-website-using-github-cloudflare-5a7a11ca9465)
+
 
 
 
