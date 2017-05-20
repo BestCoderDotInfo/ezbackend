@@ -5,8 +5,8 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-disqus: mnqun
-google_analytics:
+disqus:
+google_analytics: UA-92230923-1
 timezone:          Asia/Saigon
 title: The Best Coder Blog
 description: This is a blog about website and mobile development, some mathematics, and the occasional philosophy. Not necessarily in that order.
@@ -22,8 +22,8 @@ defaults:
       title: The Best Coder Blog
 
 author:
-  name: Libra-
-  email: me@bestcoder.info
+  name: Quan Nguyen
+  email: quannguyen@bestcoder.info
   github: minhquan4080
   twitter: libraQmn
   pinterest:
