@@ -1,5 +1,6 @@
 #!/bin/bash -e
 commit_message="$1"
+branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 git add . -A
 git commit -m "$commit_message"
-git push
+git push origin branch
