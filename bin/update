@@ -1,0 +1,13 @@
+#!/bin/bash -e
+git checkout master
+
+branch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
+echo "You are at branch $branch"
+
+git pull origin master
+
+echo 'Master branch has been updated!'
+
+git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+
+echo 'Remove local branchs merged has been successfully.'
