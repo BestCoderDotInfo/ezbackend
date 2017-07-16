@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+echo 'Visit application via browser...'
+
+# If you at root application
+ruby ./launchy.rb
+
+# If you at bin folder
+# ruby ./../launchy.rb
+
+echo ' Done..'
