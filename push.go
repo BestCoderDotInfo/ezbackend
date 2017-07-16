@@ -18,5 +18,5 @@ func main() {
   if err != nil {
           log.Fatal(err);
   }
-  fmt.Printf("Can't push your new branch. Something errors \n",out.String());
+  fmt.Printf("Output: \n",out.String());
 }

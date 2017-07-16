@@ -21,5 +21,5 @@ func main() {
   if err != nil {
           log.Fatal(err);
   }
-  fmt.Printf("Can't update latest source code from remote repo. Something errors \n",out.String());
+  fmt.Printf("Output: \n",out.String());
 }
