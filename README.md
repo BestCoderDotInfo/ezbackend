@@ -18,11 +18,51 @@
 
 - `bundle install`
 
-- Install Go (If you want use some commands).
+### Install Go (No need if you don't want commands)
+
+If you want use commands to start|open|push|update for project.
+
+- First, install Go lang: [https://golang.org/doc/install](https://golang.org/doc/install)
+
+- Open Terminal, run:
+
+```
+chmod -R 777 bestcoder
+```
+
+Then, run:
+
+```
+cd your-project && pwd
+```
+
+you will get your project rooth path. Next, run:
+
+```
+rootDir=$(pwd) && echo "alias bestcoder='cd $rootDir && ./bestcoder'" >> ~/.bash_profile && source ~/.bash_profile
+```
+
+Now, you can use `bestcoder` command:
+
+```
+bestcoder 
+  -task string
+        Task required! Please choose one: start|open|push|update
+```
+
+- Setup:  `bestcoder -task setup` .
+- Start:  `bestcoder -task start` .
+- Open:   `bestcoder -task open`  .
+- Push:   `bestcoder -task push`  .
+- Update: `bestcoder -task update`.
 
 ## Usage
 
-- `./bin/start` (`chmod 777 bin/start` if get permission denied) to starting your web server. The site will run at: **http://127.0.0.1:4000**
+Remember run `chmod -R 777 bin/file-name` if get permission denied.
+
+- `./bin/setup` to setup project.
+
+- `./bin/start` to starting your web server. The site will run at [http://127.0.0.1:4000](http://127.0.0.1:4000)
 
 - `./bin/update` to pull new code from remote repo.
 
