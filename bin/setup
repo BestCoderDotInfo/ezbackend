@@ -1,0 +1,41 @@
+#!/bin/bash
+
+ruby_version="2.3.1"
+app_name="bestcoder"
+command_name="bestcoder"
+
+cd ..
+
+command_exists () {
+  command "$1" &> /dev/null ;
+}
+
+if command_exists rvm
+  echo 'rmv has been installed'
+then
+  {
+    echo "rvm install $ruby_version"
+    rvm install $ruby_version
+  } || {
+    echo "rvm use $ruby_version"
+    rvm use $ruby_version
+  }
+  echo "rm create and use gemset with name: $app_name"
+  {
+    rvm gemset create $app_name
+    rvm gemset use $app_name
+  } || {
+    rvm gemset use $app_name
+  }
+fi
+
+printf "\n\n"
+
+echo "Starting install Ruby gems..."
+gem install bundler
+bundle install
+
+printf "\n\n"
+echo 'Done. Setup has been successfully!'
+printf "\n\n"
+echo "Use command: $command_name -task task_name (chose one: setup|start|open|push|update)."
