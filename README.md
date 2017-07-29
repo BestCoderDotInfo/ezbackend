@@ -1,5 +1,4 @@
 # Introduce Bestcoder.info
----
 
 - This is a opensource for my blog: [bestcoder.info](https://www.bestcoder.info).
 
