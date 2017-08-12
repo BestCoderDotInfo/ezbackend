@@ -3,10 +3,9 @@ title: Git tips and tricks developer should know
 layout: post
 date: '2017-08-12 22:00:00'
 comments: true
-external-url: null
 categories: git
 keywords: git, git tips, git tricks, developer, git flow
-excerpt: Most commonly used git tips and tricks
+excerpt: Most commonly used git tips and tricks.
 ---
 
 ## Show helpful guides that come with Git

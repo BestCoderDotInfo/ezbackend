@@ -1,2 +1,3 @@
 #!/bin/bash
-jekyll serve --watch
+ruby boot.rb start
+bundle exec foreman start -f Procfile
