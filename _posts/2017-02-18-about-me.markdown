@@ -5,22 +5,23 @@ comments: true
 external-url:
 categories: My-stories
 keywords: about me
-excerpt: I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths.
+excerpt: I'm a Software engineer. I know languages such as Ruby, Go, PHP, JavaScript, etc... I using it to make the world better. 
 ---
 
-> I'm a Ruby on Rails developer. But I can work same as a Full-stack developer. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths.
+I'm a Software engineer. I know languages such as Ruby, Go, PHP, JavaScript, etc... I using it to make the world better. 
 
->## PERSONAL DETAILS
+A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths.
 
-  - Fullname: NGUYEN MINH QUAN
-  - Nickname: Libra (Libra zodiac)
+## PERSONAL DETAILS
+
+  - Full name: NGUYEN MINH QUAN
   - Nationality: Vietnamese
   - DOB: 26-09-1992
   - Sex: Male
   - Marital status: Single
   - Linkedin: quanmnlibra
 
->## CAREER GOAL
+## CAREER GOAL
 
 ### Short Term:
 
@@ -36,50 +37,64 @@ excerpt: I'm a Ruby on Rails developer. But I can work same as a Full-stack deve
 
 ### Longterm:
 
-  - Become a senior software engineer, passionate pursuit to become 
-    Senior full stack developer.
+  - Become a Senior full stack developer., passionate pursuit to become 
+    Technical Leader.
 
->## COMMUNICATION SKILLS
+## COMMUNICATION SKILLS
 
   The experience at work as well as organizing outside activities has improved my ability to communicate effectively with everybody. It also taught me the importance of listening, supporting and respecting the others.
 
->## TECHNICAL SKILLS
+## TECHNICAL SKILLS
 
-  Having **good** knowledge in:
+Having **good** knowledge in:
 
-    * Ruby on Rails 
+- 3 years of experience with strong background in Back-end Web Development.
 
-    * PHP Framework such as : Laravel ( 4.2, 5.x ), CodeIgniter 
-    ( 2.x, 3.x ), OpenCart ( 2.x.x )
+- 2 years of experience with Ruby on Rails (4.x, 5.x).
 
-    * Web Development: HTML, CSS, Bootstrap, Flexbox CSS, Responsive,
-     jQuery, jQuery Mobile, Ajax.
+- Knowledge PHP Framework such as : Laravel ( 4.2, 5.x ), CodeIgniter 
+    ( 2.x, 3.x ).
 
-    * JavaScript Framework such as : AngularJS, React JS .
+- Experience with client side, web technologies such as HTML, JavaScript, CoffeeScript, ES6, CSS, SASS, jQuery.
 
-    * Mobile : Native App with React Native.
+- Knowledge JavaScript Frameworks: Angular, React.
 
-    * Databases: MySql, Postgres 
+- Experience with Mobile Development with React Native.
 
-    * Testing Framwork: RSpec 
+- Relational Database: Mysql, Postgres.
 
-    * Development tools: Git, Github, Docker
+- Familiarity with concepts of MVC, ORM, OOP and RESTful API.
 
-    * Cloud services: Heroku, AWS, Digital Ocean
+- Testing Framworks: RSpec, Minitest.
 
->## EDUCATION
+- Development tools: Git, Docker.
+
+- Experience with deploying applications on cloud such as Amazon EC2, Heroku, DigitalOcean.
+
+- Project management tools: Trello, Redmine, Basecamp.
+
+## EDUCATION
 
  **Computer Engineer** at [University of Information Technology](https://www.linkedin.com/school/15135546?pathWildcard=15135546) : 2010 - 2015
 
  [PHP Online Training](http://www.qhonline.edu.vn) : 2013 - 2014
 
->## EXPERIENCE
+## EXPERIENCE
 
-  **Full-stack Developer** at [Golden Owl Consulting Ltd](https://www.linkedin.com/company-beta/10340155/) : Feb 2016 - Present (Fulltime)
+**Full-stack Developer** at [CITYNOW CO., LTD](http://citynow.vn) : May 2017 - Present (Fulltime).
 
-  **Ruby on Rails Developer** at [Tinkerbox Studios Pte Ltd](https://www.linkedin.com/company-beta/561370/) : Seb 2016 - Dec 2016 (Remote)
+**Full-stack Developer** at [Golden Owl Consulting Ltd](https://www.linkedin.com/company-beta/10340155/) : Feb 2016 - May 2017 (Fulltime).
+
+**Ruby on Rails Developer** at [Tinkerbox Studios Pte Ltd](https://www.linkedin.com/company-beta/561370/) : Seb 2016 - Dec 2016 (Remote).
  
->## PROJECTS 
+## PROJECTS 
+
+### Revollet
+
+ - Website: revollet.io
+ - E-WALLET SERVICE LIKE ONLINE BANKING AS WELL AS FOREX TRADING PLATFORM.
+ - Technology: Ruby on Rails.
+ - Maintenance and develop new features.
 
 ### A21
   - Project descriptionFreight Platform for A21.
@@ -110,11 +125,14 @@ excerpt: I'm a Ruby on Rails developer. But I can work same as a Full-stack deve
   - Built is an iOS and Android app geared towards tracking the workouts of dedicated, serious, and professional strength athletes. It is a no frills app that gets straight to the point: tracking workouts and providing valuable metrics that can be used to improve an athlete’s performance and workout programming.
   - Technology using: React Native, D3
 
->## PERSONAL QUALITIES
+## PERSONAL QUALITIES
 
-  **A spirit of learning new technologies.
-  Sense of responsibility, carefulness in all the works done are my greatest strengths.**
+  A spirit of learning new technologies.
+  Sense of responsibility, carefulness in all the works done are my greatest strengths.
 
->## My Favorite Quotes
+## My Favorite Quotes
 
-  Programming Is Like SEX: one Mistake and You're Providing Support for Lifetime.
+**Stay hungry stay foolish - Steve Jobs**
+
+
+  
