@@ -1,5 +1,5 @@
 ---
-title: What is the differnece between extend and include in Ruby
+title: What is the difference between extend and include in Ruby
 date: '2017-10-29 09:00'
 comments: true
 categories: Ruby
