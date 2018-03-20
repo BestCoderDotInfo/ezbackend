@@ -5,10 +5,10 @@ comments: true
 external-url:
 categories: My-stories
 keywords: about me
-excerpt: I'm a Software engineer. I know languages such as Ruby, Go, PHP, JavaScript, etc... I using it to make the world better. 
+excerpt: I'm a Software engineer. I know languages such as Ruby, Go, PHP, JavaScript, etc... I using it to make the world better.
 ---
 
-I'm a Software engineer. I know languages such as Ruby, Go, PHP, JavaScript, etc... I using it to make the world better. 
+I'm a Software engineer. I know languages such as Ruby, Go, PHP, JavaScript, etc... I using it to make the world better.
 
 A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths.
 
@@ -25,19 +25,19 @@ A spirit of learning new technologies. Sense of responsibility, carefulness in a
 
 ### Short Term:
 
-  - To develop a career in a company that specializes in programming. 
-    Having a stable job, long term. Dynamic working environment, 
+  - To develop a career in a company that specializes in programming.
+    Having a stable job, long term. Dynamic working environment,
     professional dedication and contribution to the development of the company.
 
-  - Trying to become a good programmer who meets creative passion, 
+  - Trying to become a good programmer who meets creative passion,
     exploring technology, creating products that professional.
 
-  - Do not stop learning experiences, improve knowledge and 
+  - Do not stop learning experiences, improve knowledge and
     programming skills, build ourselves up to be promoted at work.
 
 ### Longterm:
 
-  - Become a Senior full stack developer., passionate pursuit to become 
+  - Become a Senior full stack developer., passionate pursuit to become
     Technical Leader.
 
 ## COMMUNICATION SKILLS
@@ -52,7 +52,7 @@ Having **good** knowledge in:
 
 - 2 years of experience with Ruby on Rails (4.x, 5.x).
 
-- Knowledge PHP Framework such as : Laravel ( 4.2, 5.x ), CodeIgniter 
+- Knowledge PHP Framework such as : Laravel ( 4.2, 5.x ), CodeIgniter
     ( 2.x, 3.x ).
 
 - Experience with client side, web technologies such as HTML, JavaScript, CoffeeScript, ES6, CSS, SASS, jQuery.
@@ -81,15 +81,24 @@ Having **good** knowledge in:
 
 ## EXPERIENCE
 
-**Full-stack Developer** at [CITYNOW CO., LTD](http://citynow.vn) : May 2017 - Present (Fulltime).
+**Full-stack Developer** at [Revollet CO., LTD](http://revollet.io) : Sep 2017 - Present (Fulltime).
+
+**Full-stack Developer** at [CITYNOW CO., LTD](http://citynow.vn) : May 2017 - Nov 2017 (Fulltime).
 
 **Full-stack Developer** at [Golden Owl Consulting Ltd](https://www.linkedin.com/company-beta/10340155/) : Feb 2016 - May 2017 (Fulltime).
 
 **Ruby on Rails Developer** at [Tinkerbox Studios Pte Ltd](https://www.linkedin.com/company-beta/561370/) : Seb 2016 - Dec 2016 (Remote).
- 
-## PROJECTS 
 
-### Revollet
+## PROJECTS
+
+### Jojos
+
+ - Website: https://jojos.chat
+ - Service platform support customers and care workers.
+ - Technology: Ruby on Rails, VueJS.
+ - Develop Back-end API and maintenance user side.
+
+### Revollet & AsianPay
 
  - Website: revollet.io
  - E-WALLET SERVICE LIKE ONLINE BANKING AS WELL AS FOREX TRADING PLATFORM.
@@ -133,6 +142,3 @@ Having **good** knowledge in:
 ## My Favorite Quotes
 
 **Stay hungry stay foolish - Steve Jobs**
-
-
-  
