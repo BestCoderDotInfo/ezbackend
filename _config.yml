@@ -82,7 +82,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Quan Nguyen"
+  name             : "Derek Nguyen"
   avatar           : "/assets/images/author/author.png"
   bio              : "I'm a Software engineer. I know languages such as Ruby, Go, PHP, JavaScript, etc...I using it to make the world better 😈. A spirit of learning new technologies. Sense of responsibility, carefulness in all the works done are my greatest strengths."
   location         : "Saigon, Vietnam."
@@ -103,7 +103,7 @@ author:
   linkedin         : "quanmnlibra"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  stackoverflow    : "3718830/quan-nguyen"
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
   twitter          :
