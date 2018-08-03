@@ -8,6 +8,7 @@ baseurl: ""
 google_analytics: 'UA-92230923-1'
 disqus: 'bestcoderdotinfo'
 mailchimp-list: ''
+url: "https://blog.bestcoder.info"
 enforce_ssl: www.bestcoder.info
 
 # Authors
