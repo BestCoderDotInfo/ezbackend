@@ -8,8 +8,8 @@ baseurl: ""
 google_analytics: 'UA-92230923-1'
 disqus: 'bestcoderdotinfo'
 mailchimp-list: ''
-url: "https://blog.bestcoder.info"
-enforce_ssl: www.bestcoder.info
+url: "https://blog.dereknguyen.xyz"
+enforce_ssl: www.blog.dereknguyen.xyz
 
 # Authors
 authors:
@@ -18,7 +18,7 @@ authors:
     display_name: Derek
     gravatar: 63d3b6ee006fd7c195170b07b3082ee5
     email: quannguyen@bestcoder.info
-    web: https://cv.bestcoder.info/
+    web: https://cv.dereknguyen.xyz
     twitter: https://twitter.com/libraQmn
     description: "Software Engineer strong background Ruby on Rails. Also, interest Java Script, Go, PHP and Blockchain."
 
