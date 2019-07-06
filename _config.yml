@@ -1,6 +1,6 @@
 # Site
 name: "The Best Coder Blog"
-description: "This is a blog about website and mobile development, some mathematics, and the occasional philosophy. Not necessarily in that order"
+description: "тнιs ιs ᴀ ʙʟoԍ ᴀʙouт wᴇʙsιтᴇ ᴀɴᴅ мoʙιʟᴇ ᴅᴇvᴇʟoᴘмᴇɴт, soмᴇ мᴀтнᴇмᴀтιcs, ᴀɴᴅ тнᴇ occᴀsιoɴᴀʟ ᴘнιʟosoᴘнʏ. ɴoт ɴᴇcᴇssᴀʀιʟʏ ιɴ тнᴀт oʀᴅᴇʀ - ｄｅｒｅｋ ."
 meta_description: "This is a blog about website and mobile development, some mathematics, and the occasional philosophy. Not necessarily in that order"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
@@ -14,8 +14,8 @@ enforce_ssl: www.blog.dereknguyen.xyz
 # Authors
 authors:
   derek:
-    name: Derek Nguyen
-    display_name: Derek
+    name: ｄｅｒｅｋ
+    display_name: ｄｅｒｅｋ
     gravatar: 63d3b6ee006fd7c195170b07b3082ee5
     email: quannguyen@bestcoder.info
     web: https://cv.dereknguyen.xyz
