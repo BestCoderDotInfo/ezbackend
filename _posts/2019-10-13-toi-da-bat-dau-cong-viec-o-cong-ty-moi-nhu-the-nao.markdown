@@ -1,7 +1,7 @@
 ---
 layout: post
 author: derek
-image: assets/assets/tamsu.jpg
+image: assets/tamsu.jpg
 featured: false
 hidden: false
 title: "Tôi đã bắt đầu công việc ở một công ty mới như thế nào?"
