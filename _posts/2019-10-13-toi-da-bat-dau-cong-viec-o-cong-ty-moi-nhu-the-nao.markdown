@@ -12,8 +12,6 @@ categories: Article
 excerpt: Theo quan điểm cá nhân của mình. Không phải chỉ riêng mỗi ngành IT là cần phải có thử thách. Mà cho dù bạn làm bất cứ ngành nào đi nữa, bất cứ công việc nào đi nữa. Thậm chí ngay cả bạn chơi một trò chơi thì luôn cần phải có những thử thách và phần thưởng xứng đáng.
 ---
 
-![](/assets/tamsu.jpg)
-
 ## Tại sao lại là thử thách?
 
 Theo quan điểm cá nhân của mình. Không phải chỉ riêng mỗi ngành IT là cần phải có thử thách. Mà cho dù bạn làm bất cứ ngành nào đi nữa, bất cứ công việc nào đi nữa. Thậm chí ngay cả bạn chơi một trò chơi thì luôn cần phải có những thử thách và phần thưởng xứng đáng.
