@@ -2,7 +2,7 @@
 layout: post
 author: derek
 image: assets/images/docker-rails.png
-featured: true
+featured: false
 hidden: false
 title: Docker Rails with Capistrano
 date: '2017-08-26 08:00:00'

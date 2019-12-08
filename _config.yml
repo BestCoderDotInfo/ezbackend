@@ -42,3 +42,4 @@ paginate_path: /page:num/
 # Other
 markdown: kramdown
 highlighter: rouge
+show_feature_posts: false
