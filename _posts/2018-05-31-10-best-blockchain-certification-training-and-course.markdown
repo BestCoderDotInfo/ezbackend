@@ -2,7 +2,7 @@
 layout: post
 author: derek
 image: assets/images/blockchain.jpeg
-featured: true
+featured: false
 hidden: false
 title: 10 Best Blockchain Certification, Training & Courses
 date: '2018-05-31 10:00:00'
