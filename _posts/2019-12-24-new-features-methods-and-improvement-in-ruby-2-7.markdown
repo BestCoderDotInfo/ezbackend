@@ -1,7 +1,7 @@
 ---
 layout: post
 author: derek
-image: assets/action-text.jpg
+image: assets/ruby-2.7.jpg
 featured: false
 hidden: false
 title: " New features, methods and improvements in Ruby 2.7"
