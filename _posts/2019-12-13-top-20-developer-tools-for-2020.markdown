@@ -6,8 +6,9 @@ excerpt: When it comes to the most popular technologies, we look to Stack Overfl
 layout: post
 author: derek
 categories: Development Programming
-keywords: development tools, web development, GitHub, gitkraken, atom, ide, software
-  development
+keywords: development tools, web development, GitHub, gitkraken, atom, ide, software development
+image: assets/top-20-2020.jpg
+
 ---
 
 When it comes to the most popular technologies, we look to Stack Overflow’s Developer Survey 2019 to find the answers. JavaScript continues to be the most commonly used programming language for 7 years in a row, while Python is the fastest growing. 
