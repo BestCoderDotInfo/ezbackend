@@ -7,7 +7,7 @@ layout: post
 author: derek
 categories: Development Programming
 keywords: development tools, web development, GitHub, gitkraken, atom, ide, software development
-image: assets/Top-20-2020.png
+image: assets/images/Top-20-2020.png
 
 ---
 
