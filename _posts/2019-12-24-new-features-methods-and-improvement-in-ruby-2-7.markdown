@@ -1,17 +1,16 @@
 ---
+title: New features, methods and improvements in Ruby 2.7
 layout: post
 author: derek
 image: assets/ruby-2.7.jpg
 featured: false
 hidden: false
-title: New features, methods and improvements in Ruby 2.7
 date: 2019-12-24 12:00
 comments: true
 external-url:
 categories: Ruby
 keywords: Ruby, Rails, Web Development
-excerpt: Ruby never stops improving!
-Version 2.7 is around the corner with new features & methods. It’s scheduled for release on December 25, 2019.
+excerpt: Ruby never stops improving! Version 2.7 is around the corner with new features & methods. It’s scheduled for release on December 25, 2019.
 ---
 **Ruby never stops improving!**
 
