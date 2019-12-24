@@ -2,7 +2,7 @@
 title: New features, methods and improvements in Ruby 2.7
 layout: post
 author: derek
-image: assets/images/ruby-2.7.jpg
+image: assets/ruby-2.7.png
 featured: false
 hidden: false
 date: 2019-12-24 12:00
